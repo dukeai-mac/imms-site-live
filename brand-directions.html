@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMMS Brand Directions</title>
+    <meta name="description" content="Exploration of premium web brand directions for IMMS." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .brand-lab {
+        padding: 84px 0;
+      }
+      .brand-lab-header {
+        margin-bottom: 34px;
+      }
+      .brand-grid {
+        display: grid;
+        gap: 24px;
+      }
+      .brand-direction-card {
+        padding: 34px;
+        border-radius: 28px;
+        border: 1px solid rgba(255,255,255,0.08);
+        background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+        box-shadow: 0 24px 60px rgba(0,0,0,0.20);
+      }
+      .brand-direction-card h2 {
+        margin-bottom: 8px;
+      }
+      .brand-direction-card p {
+        max-width: 900px;
+      }
+      .concept-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+        margin-top: 26px;
+      }
+      .concept-box {
+        min-height: 280px;
+        border-radius: 24px;
+        padding: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .concept-box.dark-a {
+        background: linear-gradient(180deg, #0d1724 0%, #132338 100%);
+        border: 1px solid rgba(255,255,255,0.08);
+      }
+      .concept-box.dark-b {
+        background: linear-gradient(180deg, #121821 0%, #1d2530 100%);
+        border: 1px solid rgba(198,166,106,0.16);
+      }
+      .concept-box.light-c {
+        background: linear-gradient(180deg, #f8f4ec 0%, #efe7db 100%);
+        border: 1px solid rgba(16,32,51,0.08);
+      }
+      .mini-kicker {
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--gold-soft);
+      }
+      .mark-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .wordmark-a {
+        font-size: clamp(2.4rem, 4vw, 3.5rem);
+        font-weight: 800;
+        letter-spacing: 0.22em;
+        color: var(--white);
+      }
+      .descriptor-a {
+        color: rgba(232,237,243,0.66);
+        font-size: 0.92rem;
+        letter-spacing: 0.05em;
+      }
+      .seal-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .seal-ring {
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+        border: 1px solid rgba(198,166,106,0.38);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gold-soft);
+        font-size: 1.15rem;
+        letter-spacing: 0.12em;
+        font-weight: 700;
+      }
+      .wordmark-b {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(2.7rem, 4vw, 3.9rem);
+        letter-spacing: 0.12em;
+        color: #f4eddc;
+      }
+      .descriptor-b {
+        color: rgba(244,237,220,0.62);
+        font-size: 0.92rem;
+        letter-spacing: 0.05em;
+      }
+      .plaque-box {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 18px 20px;
+        border-radius: 22px;
+        background: rgba(255,255,255,0.78);
+        border: 1px solid rgba(16,32,51,0.08);
+        width: fit-content;
+      }
+      .wordmark-c {
+        font-size: clamp(2.2rem, 4vw, 3.3rem);
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        color: #132234;
+      }
+      .descriptor-c {
+        color: rgba(16,32,51,0.62);
+        font-size: 0.9rem;
+        letter-spacing: 0.04em;
+      }
+      .rationale {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+      .concept-box.light-c .rationale {
+        border-top-color: rgba(16,32,51,0.08);
+      }
+      .rationale strong {
+        display: block;
+        margin-bottom: 6px;
+      }
+      @media (max-width: 920px) {
+        .concept-row { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand brand-logo wordmark-only" href="index.html">
+          <span class="brand-copy brand-copy-large">
+            <strong>IMMS</strong>
+            <small>Brand Exploration</small>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Dark Version</a>
+          <a href="light/index.html">Light Version</a>
+          <a href="brand-directions.html" class="active">Brand Directions</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="brand-lab">
+      <div class="container brand-lab-header">
+        <p class="eyebrow">IMMS Brand System Exploration</p>
+        <h1>Modern luxury institutional branding directions for IMMS.</h1>
+        <p class="lead">
+          The core objective is to stop relying on the legacy white-box logo as the main visual asset and instead create a brand language that feels established, international, refined, and web-native.
+        </p>
+      </div>
+
+      <div class="container brand-grid">
+        <section class="brand-direction-card">
+          <p class="section-label">Direction 1 · Recommended</p>
+          <h2>Modern Luxury Institutional</h2>
+          <p>
+            This is the strongest fit for IMMS. It balances premium restraint, executive credibility, and current web polish. The system is built around a clean wordmark, a disciplined color palette, and optional secondary marks rather than forcing a legacy logo everywhere.
+          </p>
+
+          <div class="concept-row">
+            <div class="concept-box dark-a">
+              <div class="mark-stack">
+                <span class="mini-kicker">Primary Wordmark</span>
+                <div class="wordmark-a">IMMS</div>
+                <div class="descriptor-a">INTERNATIONAL MULTIPLE MEDICAL SERVICES</div>
+              </div>
+              <div class="rationale">
+                <strong>Use:</strong>
+                <p>Main website header, hero, proposals, and executive presentation materials.</p>
+              </div>
+            </div>
+
+            <div class="concept-box dark-b">
+              <div class="mark-stack">
+                <span class="mini-kicker">Secondary Emblem</span>
+                <div class="seal-row">
+                  <div class="seal-ring">IM</div>
+                  <div>
+                    <div class="wordmark-b">IMMS</div>
+                    <div class="descriptor-b">Established 1998</div>
+                  </div>
+                </div>
+              </div>
+              <div class="rationale">
+                <strong>Use:</strong>
+                <p>Hero moments, premium brochure sections, selective homepage treatments, or future stationery.</p>
+              </div>
+            </div>
+
+            <div class="concept-box light-c">
+              <div class="mark-stack">
+                <span class="mini-kicker">Light Background Lockup</span>
+                <div class="plaque-box">
+                  <div class="wordmark-c">IMMS</div>
+                  <div class="descriptor-c">International Multiple Medical Services</div>
+                </div>
+              </div>
+              <div class="rationale">
+                <strong>Use:</strong>
+                <p>Light homepage variant, interior pages, and polished web sections that need softness without losing authority.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

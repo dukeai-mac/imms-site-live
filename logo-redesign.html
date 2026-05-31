@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMMS Logo Redesign Concepts</title>
+    <meta name="description" content="Refined logo redesign concepts based on the original IMMS medical-global emblem." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0b1420;
+        --panel: #111d2b;
+        --panel-2: #162434;
+        --line: rgba(255,255,255,0.09);
+        --text: #eef2f6;
+        --muted: #97a6b8;
+        --gold: #c8a86a;
+        --gold-soft: #ddc79f;
+        --deep: #102033;
+        --cream: #f6f0e5;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(180deg, #0a131d 0%, #0d1724 100%);
+        color: var(--text);
+      }
+      .container {
+        width: min(1280px, calc(100% - 48px));
+        margin: 0 auto;
+      }
+      .header {
+        padding: 72px 0 28px;
+      }
+      .kicker {
+        color: var(--gold-soft);
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 0.78rem;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+      h1 {
+        font-size: clamp(2.8rem, 6vw, 5rem);
+        line-height: 1.05;
+        margin: 0 0 16px;
+      }
+      .lead {
+        max-width: 900px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.8;
+      }
+      .grid {
+        display: grid;
+        gap: 24px;
+        padding: 20px 0 80px;
+      }
+      .card {
+        background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 30px;
+        box-shadow: 0 26px 70px rgba(0,0,0,0.24);
+      }
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 1.8rem;
+      }
+      .card p {
+        color: var(--muted);
+        line-height: 1.75;
+      }
+      .logo-showcase {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 22px;
+      }
+      .surface {
+        border-radius: 24px;
+        padding: 28px;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .surface-dark {
+        background: linear-gradient(180deg, #0f1a27 0%, #15263a 100%);
+        border: 1px solid rgba(255,255,255,0.08);
+      }
+      .surface-light {
+        background: linear-gradient(180deg, #faf6ef 0%, #efe7da 100%);
+        border: 1px solid rgba(16,32,51,0.08);
+        color: var(--deep);
+      }
+      .surface-label {
+        font-size: 0.74rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-weight: 700;
+        opacity: 0.8;
+      }
+      .brand-lock {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .brand-type {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .brand-type strong {
+        font-size: clamp(2.1rem, 4vw, 3rem);
+        letter-spacing: 0.18em;
+      }
+      .brand-type span {
+        font-size: 0.88rem;
+        letter-spacing: 0.05em;
+        opacity: 0.72;
+      }
+      .svg-badge {
+        width: 104px;
+        height: 104px;
+        flex: 0 0 auto;
+      }
+      .notes {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+      .surface-light .notes {
+        border-top-color: rgba(16,32,51,0.08);
+      }
+      .notes strong {
+        display: block;
+        margin-bottom: 8px;
+      }
+      @media (max-width: 900px) {
+        .logo-showcase { grid-template-columns: 1fr; }
+        .brand-lock { align-items: flex-start; flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <div class="container">
+          <div class="kicker">IMMS Logo Redesign · Based on Original Concept</div>
+          <h1>Refining the original medical-global idea into something premium.</h1>
+          <p class="lead">
+            These concepts keep the core DNA from your original logo: medical identity, global relevance, and emblematic structure. The goal is to preserve the idea while removing clutter, white-background dependence, and outdated visual noise.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container grid">
+          <article class="card">
+            <h2>Concept A · Refined Globe + Medical Axis</h2>
+            <p>
+              This is the strongest direct evolution of your existing idea. It keeps the globe, the medical centerline, and the sense of international healthcare, but simplifies the geometry and raises the finish.
+            </p>
+            <div class="logo-showcase">
+              <div class="surface surface-dark">
+                <div class="surface-label">Dark Background</div>
+                <div class="brand-lock">
+                  <svg class="svg-badge" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="48" stroke="#C8A86A" stroke-width="2.4"/>
+                    <ellipse cx="60" cy="60" rx="18" ry="48" stroke="#C8A86A" stroke-width="1.8" opacity="0.92"/>
+                    <ellipse cx="60" cy="60" rx="34" ry="48" stroke="#C8A86A" stroke-width="1.2" opacity="0.34"/>
+                    <path d="M18 60H102" stroke="#C8A86A" stroke-width="1.6" opacity="0.52"/>
+                    <path d="M23 43C35 47 47 49 60 49C73 49 85 47 97 43" stroke="#C8A86A" stroke-width="1.5" opacity="0.52"/>
+                    <path d="M23 77C35 73 47 71 60 71C73 71 85 73 97 77" stroke="#C8A86A" stroke-width="1.5" opacity="0.52"/>
+                    <path d="M60 29V91" stroke="#F3E7CB" stroke-width="4.2" stroke-linecap="round"/>
+                    <path d="M43 46H77" stroke="#F3E7CB" stroke-width="4.2" stroke-linecap="round"/>
+                    <circle cx="60" cy="60" r="8.5" fill="#0F1A27" stroke="#F3E7CB" stroke-width="2.2"/>
+                  </svg>
+                  <div class="brand-type">
+                    <strong>IMMS</strong>
+                    <span>International Multiple Medical Services</span>
+                  </div>
+                </div>
+                <div class="notes">
+                  <strong>Why it works</strong>
+                  <span>Feels medical, global, executive, and much more controlled than the current JPG mark.</span>
+                </div>
+              </div>
+
+              <div class="surface surface-light">
+                <div class="surface-label">Light Background</div>
+                <div class="brand-lock">
+                  <svg class="svg-badge" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="48" stroke="#B99558" stroke-width="2.4"/>
+                    <ellipse cx="60" cy="60" rx="18" ry="48" stroke="#B99558" stroke-width="1.8" opacity="0.92"/>
+                    <ellipse cx="60" cy="60" rx="34" ry="48" stroke="#B99558" stroke-width="1.2" opacity="0.34"/>
+                    <path d="M18 60H102" stroke="#B99558" stroke-width="1.6" opacity="0.52"/>
+                    <path d="M23 43C35 47 47 49 60 49C73 49 85 47 97 43" stroke="#B99558" stroke-width="1.5" opacity="0.52"/>
+                    <path d="M23 77C35 73 47 71 60 71C73 71 85 73 97 77" stroke="#B99558" stroke-width="1.5" opacity="0.52"/>
+                    <path d="M60 29V91" stroke="#132234" stroke-width="4.2" stroke-linecap="round"/>
+                    <path d="M43 46H77" stroke="#132234" stroke-width="4.2" stroke-linecap="round"/>
+                    <circle cx="60" cy="60" r="8.5" fill="#F7F1E5" stroke="#132234" stroke-width="2.2"/>
+                  </svg>
+                  <div class="brand-type">
+                    <strong>IMMS</strong>
+                    <span>International Multiple Medical Services</span>
+                  </div>
+                </div>
+                <div class="notes">
+                  <strong>Best use</strong>
+                  <span>Primary website identity if you want a direct but upgraded evolution of your existing concept.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Concept B · Premium Shield Globe</h2>
+            <p>
+              This direction adds a more institutional frame. It keeps the medical-global symbolism, but the shield makes it feel more established and protective — good if you want a stronger enterprise tone.
+            </p>
+            <div class="logo-showcase">
+              <div class="surface surface-dark">
+                <div class="surface-label">Dark Background</div>
+                <div class="brand-lock">
+                  <svg class="svg-badge" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M60 14L92 26V54C92 77 77 95 60 104C43 95 28 77 28 54V26L60 14Z" stroke="#C8A86A" stroke-width="2.4"/>
+                    <ellipse cx="60" cy="54" rx="19" ry="27" stroke="#C8A86A" stroke-width="1.5" opacity="0.95"/>
+                    <path d="M35 54H85" stroke="#C8A86A" stroke-width="1.4" opacity="0.44"/>
+                    <path d="M42 42C48 44 54 45 60 45C66 45 72 44 78 42" stroke="#C8A86A" stroke-width="1.2" opacity="0.44"/>
+                    <path d="M42 66C48 64 54 63 60 63C66 63 72 64 78 66" stroke="#C8A86A" stroke-width="1.2" opacity="0.44"/>
+                    <path d="M60 36V72" stroke="#F3E7CB" stroke-width="3.8" stroke-linecap="round"/>
+                    <path d="M48 48H72" stroke="#F3E7CB" stroke-width="3.8" stroke-linecap="round"/>
+                  </svg>
+                  <div class="brand-type">
+                    <strong>IMMS</strong>
+                    <span>International Multiple Medical Services</span>
+                  </div>
+                </div>
+                <div class="notes">
+                  <strong>Why it works</strong>
+                  <span>Feels more institutional and “battle-tested,” while still remaining medically relevant.</span>
+                </div>
+              </div>
+
+              <div class="surface surface-light">
+                <div class="surface-label">Light Background</div>
+                <div class="brand-lock">
+                  <svg class="svg-badge" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M60 14L92 26V54C92 77 77 95 60 104C43 95 28 77 28 54V26L60 14Z" stroke="#B99558" stroke-width="2.4"/>
+                    <ellipse cx="60" cy="54" rx="19" ry="27" stroke="#B99558" stroke-width="1.5" opacity="0.95"/>
+                    <path d="M35 54H85" stroke="#B99558" stroke-width="1.4" opacity="0.44"/>
+                    <path d="M42 42C48 44 54 45 60 45C66 45 72 44 78 42" stroke="#B99558" stroke-width="1.2" opacity="0.44"/>
+                    <path d="M42 66C48 64 54 63 60 63C66 63 72 64 78 66" stroke="#B99558" stroke-width="1.2" opacity="0.44"/>
+                    <path d="M60 36V72" stroke="#132234" stroke-width="3.8" stroke-linecap="round"/>
+                    <path d="M48 48H72" stroke="#132234" stroke-width="3.8" stroke-linecap="round"/>
+                  </svg>
+                  <div class="brand-type">
+                    <strong>IMMS</strong>
+                    <span>International Multiple Medical Services</span>
+                  </div>
+                </div>
+                <div class="notes">
+                  <strong>Best use</strong>
+                  <span>Good if you want more authority and structure than elegance.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Concept C · Minimal Globe Cross Emblem</h2>
+            <p>
+              This is the cleanest interpretation. It keeps the globe and the medical cross, but strips the rest down so it feels more luxury-modern. It is less literal, more polished, and likely the easiest to scale across web and documents.
+            </p>
+            <div class="logo-showcase">
+              <div class="surface surface-dark">
+                <div class="surface-label">Dark Background</div>
+                <div class="brand-lock">
+                  <svg class="svg-badge" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="46" stroke="#C8A86A" stroke-width="2.2"/>
+                    <ellipse cx="60" cy="60" rx="24" ry="46" stroke="#C8A86A" stroke-width="1.4" opacity="0.38"/>
+                    <path d="M20 60H100" stroke="#C8A86A" stroke-width="1.4" opacity="0.38"/>
+                    <path d="M60 38V82" stroke="#F3E7CB" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M38 60H82" stroke="#F3E7CB" stroke-width="5" stroke-linecap="round"/>
+                  </svg>
+                  <div class="brand-type">
+                    <strong>IMMS</strong>
+                    <span>International Multiple Medical Services</span>
+                  </div>
+                </div>
+                <div class="notes">
+                  <strong>Why it works</strong>
+                  <span>Most modern and seamless. Still clearly medical, still clearly global, without feeling busy.</span>
+                </div>
+              </div>
+
+              <div class="surface surface-light">
+                <div class="surface-label">Light Background</div>
+                <div class="brand-lock">
+                  <svg class="svg-badge" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="46" stroke="#B99558" stroke-width="2.2"/>
+                    <ellipse cx="60" cy="60" rx="24" ry="46" stroke="#B99558" stroke-width="1.4" opacity="0.38"/>
+                    <path d="M20 60H100" stroke="#B99558" stroke-width="1.4" opacity="0.38"/>
+                    <path d="M60 38V82" stroke="#132234" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M38 60H82" stroke="#132234" stroke-width="5" stroke-linecap="round"/>
+                  </svg>
+                  <div class="brand-type">
+                    <strong>IMMS</strong>
+                    <span>International Multiple Medical Services</span>
+                  </div>
+                </div>
+                <div class="notes">
+                  <strong>Best use</strong>
+                  <span>Best if you want a cleaner, more upscale, more web-native identity while still keeping the original idea alive.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

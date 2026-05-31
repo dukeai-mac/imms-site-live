@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMMS Homepage Visual Preview</title>
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --surface: rgba(255,255,255,0.82);
+      --line: rgba(29,53,87,0.10);
+      --text: #17202b;
+      --muted: #5c6570;
+      --brand: #1d3557;
+      --gold: #8a6a2f;
+      --dark: #0f1a24;
+      --shadow: 0 22px 70px rgba(13, 24, 36, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, 'Times New Roman', serif;
+      background:
+        radial-gradient(circle at top left, rgba(138,106,47,0.12), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(29,53,87,0.12), transparent 26%),
+        linear-gradient(135deg, #f8f4ed 0%, #efe5d5 50%, #f5f0e7 100%);
+      color: var(--text);
+      padding: 28px;
+    }
+    .frame {
+      max-width: 1500px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.32);
+      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 28px;
+      border-bottom: 1px solid rgba(29,53,87,0.08);
+      background: rgba(255,255,255,0.55);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+      letter-spacing: .10em;
+      color: var(--brand);
+    }
+    .logo {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(29,53,87,0.1);
+      background: white;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .btn {
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--brand);
+      color: white;
+      font-size: 14px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 28px;
+      padding: 34px 32px 26px;
+    }
+    .hero-left {
+      background: linear-gradient(180deg, rgba(255,255,255,0.70) 0%, rgba(255,255,255,0.45) 100%);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 34px;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: var(--gold);
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 66px;
+      line-height: 1.03;
+      margin: 0 0 18px;
+      max-width: 880px;
+    }
+    .lead {
+      font-size: 21px;
+      line-height: 1.5;
+      color: var(--muted);
+      max-width: 860px;
+      margin-bottom: 18px;
+    }
+    .proof {
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .chip {
+      padding: 10px 14px;
+      background: rgba(29,53,87,0.06);
+      border: 1px solid rgba(29,53,87,0.10);
+      border-radius: 999px;
+      font-size: 14px;
+    }
+    .cta-row { display: flex; gap: 14px; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--brand);
+      border: 1px solid rgba(29,53,87,0.18);
+    }
+    .hero-right {
+      background: linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,251,245,0.95) 100%);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .panel-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .stat {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.86);
+      border: 1px solid rgba(29,53,87,0.10);
+    }
+    .stat strong {
+      display: block;
+      font-size: 34px;
+      color: var(--brand);
+      margin-bottom: 6px;
+    }
+    .note {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(29,53,87,0.08);
+      color: var(--muted);
+    }
+    .trust {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 14px;
+      padding: 0 32px 18px;
+    }
+    .trust div {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 16px;
+      background: rgba(255,255,255,0.74);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      font-size: 15px;
+    }
+    .section {
+      padding: 8px 32px 28px;
+    }
+    .section-inner {
+      background: rgba(255,255,255,0.64);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 28px;
+    }
+    .section-title {
+      font-size: 14px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .section h2 {
+      font-size: 36px;
+      margin: 0 0 12px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 16px;
+      margin-top: 22px;
+    }
+    .card {
+      background: rgba(255,255,255,0.85);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .card h3 { margin: 0 0 10px; font-size: 22px; }
+    .card p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.45; }
+    .footer-cta {
+      margin: 2px 32px 34px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(247,241,231,0.96) 100%);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px 30px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 20px;
+      align-items: center;
+    }
+    .footer-cta h2 { font-size: 40px; margin: 0 0 12px; }
+    .contact-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-weight: 700;
+      color: var(--brand);
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="nav">
+      <div class="brand">
+        <img src="assets/logo.jpg" class="logo" alt="IMMS logo" />
+        <span>IMMS</span>
+      </div>
+      <div class="nav-links">
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <span>Why IMMS</span>
+        <span class="btn">Contact</span>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">International Multiple Medical Services</div>
+        <h1>Specialized Revenue Cycle Support for High-Performing Hospital International Departments</h1>
+        <div class="lead">IMMS helps hospitals strengthen the financial performance of their international dept. through specialized support in verification of benefits, guarantee of payment workflows, billing, claims management, payer follow-up, collections, and reconciliation.</div>
+        <div class="proof">Founded in 1998. More than $400 million billed to insurers and assistance companies.</div>
+        <div class="chips">
+          <div class="chip">Nearly 30 years of focused experience</div>
+          <div class="chip">International patient revenue specialization</div>
+          <div class="chip">Customized hospital-aligned model</div>
+        </div>
+        <div class="cta-row">
+          <div class="btn">Request a Consultation</div>
+          <div class="btn btn-secondary">Explore Services</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="panel-label">Executive Overview</div>
+        <div class="stats">
+          <div class="stat">
+            <strong>28+</strong>
+            <span>Years of specialized industry experience</span>
+          </div>
+          <div class="stat">
+            <strong>$400M+</strong>
+            <span>Billed to insurers and assistance companies</span>
+          </div>
+        </div>
+        <div class="stat">
+          <strong>Focused</strong>
+          <span>On the operational realities of the international dept.</span>
+        </div>
+        <div class="note">
+          <strong style="display:block;color:#17202b;margin-bottom:8px;">Structured for hospital leadership.</strong>
+          Built for administrators, owners, and international dept. leaders who need stronger financial execution and a more disciplined recovery model.
+        </div>
+      </div>
+    </div>
+
+    <div class="trust">
+      <div>Specialized international dept. support</div>
+      <div>Hospital-aligned operating model</div>
+      <div>Claims, follow-up, and recovery discipline</div>
+      <div>Executive-grade positioning</div>
+    </div>
+
+    <div class="section">
+      <div class="section-inner">
+        <div class="section-title">Core Service Areas</div>
+        <h2>Focused Support Across the Financial Functions That Matter Most</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Verification of Benefits</h3>
+            <p>Clarify coverage, identify requirements, and reduce preventable downstream friction.</p>
+          </div>
+          <div class="card">
+            <h3>GOP & Claims Workflows</h3>
+            <p>Bring structure, timeliness, and discipline to international documentation and claims execution.</p>
+          </div>
+          <div class="card">
+            <h3>Follow-Up & Collections</h3>
+            <p>Maintain momentum on open accounts with persistent, informed recovery follow-through.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cta">
+      <div>
+        <div class="section-title">Ready to Talk?</div>
+        <h2>A More Effective International Dept. Starts With Stronger Financial Execution</h2>
+      </div>
+      <div class="contact-meta">
+        <span>info@immsbilling.com</span>
+        <span>407 931 1717</span>
+        <span>220 E Monument Ave, Suite B, Kissimmee, FL 34741</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
