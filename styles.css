@@ -114,6 +114,9 @@ strong { color: inherit; }
   height: auto;
   object-fit: contain;
 }
+.nav-logo-image {
+  border-radius: 8px;
+}
 .brand-copy {
   display: flex;
   flex-direction: column;
@@ -238,12 +241,14 @@ button.btn {
   gap: 14px;
   max-width: 760px;
 }
-.hero-rebuilt-topline {
-  color: var(--gold-soft);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+.hero-rebuilt-brand {
+  display: inline-flex;
+  align-items: center;
+}
+.hero-rebuilt-logo {
+  width: min(280px, 72vw);
+  height: auto;
+  display: block;
 }
 .hero-rebuilt h1 {
   max-width: 12ch;
@@ -661,9 +666,8 @@ button.btn {
   .hero-rebuilt-stack {
     gap: 10px;
   }
-  .hero-rebuilt-topline {
-    font-size: 0.64rem;
-    letter-spacing: 0.12em;
+  .hero-rebuilt-logo {
+    width: min(210px, 68vw);
   }
   .hero-rebuilt h1 {
     max-width: none;
@@ -854,8 +858,8 @@ button.btn {
   .hero-rebuilt {
     padding: 20px 0 14px;
   }
-  .hero-rebuilt-topline {
-    font-size: 0.58rem;
+  .hero-rebuilt-logo {
+    width: min(180px, 64vw);
   }
   .hero-rebuilt-lead {
     font-size: 0.88rem;
