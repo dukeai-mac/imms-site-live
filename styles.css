@@ -211,7 +211,7 @@ button.btn {
 
 .hero,
 .page-hero {
-  padding: 68px 0 58px;
+  padding: 52px 0 44px;
 }
 .hero-grid,
 .split,
@@ -229,7 +229,7 @@ button.btn {
   align-items: stretch;
 }
 .hero-copy { padding: 16px 0 18px; }
-.hero-copy h1 { max-width: 11ch; }
+.hero-copy h1 { max-width: 10ch; }
 .eyebrow,
 .section-label {
   display: inline-block;
@@ -242,20 +242,20 @@ button.btn {
 }
 .section-label.light { color: #dbc18f; }
 .lead {
-  font-size: 1.12rem;
-  line-height: 1.82;
-  max-width: 760px;
+  font-size: 1.04rem;
+  line-height: 1.72;
+  max-width: 700px;
 }
 .proof {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-weight: 600;
   color: white;
 }
 .proof-bar {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
-  margin-top: 22px;
+  margin-top: 16px;
 }
 .proof-bar span {
   display: inline-flex;
@@ -270,18 +270,18 @@ button.btn {
 .cta-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 32px;
+  gap: 12px;
+  margin-top: 22px;
 }
 .hero-logo-wrap {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 18px;
+  gap: 10px;
+  margin-bottom: 14px;
 }
 .hero-logo-shell-wide {
-  width: 150px;
-  max-width: 150px;
+  width: 120px;
+  max-width: 120px;
 }
 .hero-logo {
   width: 100%;
@@ -292,12 +292,12 @@ button.btn {
 .hero-logo-text strong {
   display: block;
   color: white;
-  font-size: 1.08rem;
-  letter-spacing: 0.16em;
+  font-size: 0.98rem;
+  letter-spacing: 0.13em;
 }
 .hero-logo-text span {
   color: rgba(237,243,248,0.7);
-  font-size: 0.84rem;
+  font-size: 0.78rem;
 }
 
 .hero-card,
@@ -313,7 +313,7 @@ button.btn {
 }
 .hero-card {
   position: relative;
-  padding: 34px;
+  padding: 26px;
   background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: var(--shadow);
