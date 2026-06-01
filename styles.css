@@ -225,10 +225,10 @@ button.btn {
   gap: 28px;
 }
 .hero-grid {
-  grid-template-columns: minmax(0, 1.18fr) minmax(360px, 0.82fr);
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
+  align-items: start;
 }
-.hero-copy { padding: 16px 0 18px; }
+.hero-copy { padding: 6px 0 8px; }
 .hero-copy h1 { max-width: 10ch; }
 .eyebrow,
 .section-label {
@@ -266,6 +266,10 @@ button.btn {
   border: 1px solid rgba(255,255,255,0.08);
   color: rgba(237,243,248,0.84);
   font-size: 0.9rem;
+}
+.hero-proof-compact span {
+  padding: 8px 12px;
+  font-size: 0.84rem;
 }
 .cta-row {
   display: flex;
@@ -318,6 +322,13 @@ button.btn {
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
+}
+.hero-card-compact h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.08;
+}
+.hero-card-compact p:last-child {
+  margin-bottom: 0;
 }
 .hero-card::before {
   content: "";
@@ -655,6 +666,9 @@ button.btn {
   }
   .hero-copy h1 {
     max-width: none;
+  }
+  .hero-card-compact {
+    display: none;
   }
   .eyebrow,
   .section-label {
